@@ -6,7 +6,7 @@ def do_connect():
   wlan.active(True)
   if not wlan.isconnected():
     print('connecting to network...')
-    wlan.connect('MMMMMMMMM', 'qsq19931219')
+    wlan.connect('MMMMMMMMM', 'qsq19931219')  # wifi名字和密码
     while not wlan.isconnected():
       pass
   print('connect successful,network ifconfig:', wlan.ifconfig())
